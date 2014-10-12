@@ -1,0 +1,43 @@
+{
+  "name": "thunkify-or-promisify",
+  "version": "0.1.0",
+  "description": "thunkify or promisify a callback style function",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --harmony -R spec -t 50 test/*.js",
+    "test-cov": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -R dot -t 50 test/*.js",
+    "test-travis": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 50 test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderhaoxin/thunkify-or-promisify.git"
+  },
+  "keywords": [
+    "promisify",
+    "thunkify",
+    "callback",
+    "promise",
+    "thunk",
+    "koa",
+    "co"
+  ],
+  "files": [
+    "index.js",
+    "Readme.md"
+  ],
+  "author": "haoxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderhaoxin/thunkify-or-promisify/issues"
+  },
+  "homepage": "https://github.com/coderhaoxin/thunkify-or-promisify",
+  "dependencies": {
+    "native-promisify": "0",
+    "thunkify": "2"
+  },
+  "devDependencies": {
+    "co": "*",
+    "istanbul-harmony": "*",
+    "mocha": "*"
+  }
+}
