@@ -10,6 +10,14 @@ thunkify or promisify a callback style function
 ```js
 var wrapper = require('thunkify-or-promisify');
 
+/**
+ * @param origin  {function | object}
+ * @param type    {string}           - optional ('thunk': thunkify, any other values: promisify)
+ * @param ignores {array}            - optional (ignore some functional properties of object)
+ *
+ * wrapper(origin, type, ignores)
+ */
+
 // promisify
 fn = wrapper(fn);
 wrapper(object);
