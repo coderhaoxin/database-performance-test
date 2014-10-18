@@ -8,7 +8,7 @@
 thunkify or promisify a callback style function
 
 ```js
-var wrapper = function('thunkify-or-promisify');
+var wrapper = require('thunkify-or-promisify');
 
 // promisify
 fn = wrapper(fn);
