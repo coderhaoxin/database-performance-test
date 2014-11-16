@@ -12,7 +12,7 @@ describe('## thunkify-or-promisify', function() {
         var ms = yield d(10);
 
         equal(ms, 10);
-      })(done);
+      }).then(done, done);
     });
 
     it('object', function(done) {
@@ -24,7 +24,7 @@ describe('## thunkify-or-promisify', function() {
         yield ctx.count(10);
 
         equal(ctx.total, 10);
-      })(done);
+      }).then(done, done);
     });
 
     it('object - ignore', function(done) {
@@ -36,7 +36,7 @@ describe('## thunkify-or-promisify', function() {
         yield ctx.count(10);
 
         equal(ctx.total, 10);
-      })(done);
+      }).then(done, done);
     });
   });
 
@@ -47,7 +47,7 @@ describe('## thunkify-or-promisify', function() {
         var ms = yield d(10);
 
         equal(ms, 10);
-      })(done);
+      }).then(done, done);
     });
 
     it('object', function(done) {
@@ -59,7 +59,7 @@ describe('## thunkify-or-promisify', function() {
         yield ctx.count(10);
 
         equal(ctx.total, 10);
-      })(done);
+      }).then(done, done);
     });
 
     it('object - ignore', function(done) {
@@ -74,7 +74,7 @@ describe('## thunkify-or-promisify', function() {
 
         equal(typeof ctx.count(10).then, 'function');
         equal(typeof ctx.delay(noop), 'undefined');
-      })(done);
+      }).then(done, done);
     });
 
     it('object - type, ignore', function(done) {
@@ -89,7 +89,7 @@ describe('## thunkify-or-promisify', function() {
 
         equal(typeof ctx.count(10).then, 'function');
         equal(typeof ctx.delay(noop), 'undefined');
-      })(done);
+      }).then(done, done);
     });
   });
 });
