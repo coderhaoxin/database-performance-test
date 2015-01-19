@@ -1,3 +1,5 @@
+### Deprecated, use [thenify](https://github.com/thenables/thenify) or [thenify-all](https://github.com/thenables/thenify-all)
+
 [![NPM version][npm-img]][npm-url]
 [![Build status][travis-img]][travis-url]
 [![Test coverage][coveralls-img]][coveralls-url]
@@ -37,3 +39,6 @@ wrapper(object, 'thunk');
 [license-url]: http://opensource.org/licenses/MIT
 [david-img]: https://img.shields.io/david/coderhaoxin/thunkify-or-promisify.svg?style=flat-square
 [david-url]: https://david-dm.org/coderhaoxin/thunkify-or-promisify
+
+### License
+MIT
